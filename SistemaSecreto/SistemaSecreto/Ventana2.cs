@@ -26,7 +26,25 @@ namespace SistemaSecreto
 
         private void Button1_Click(object sender, EventArgs e)//botcomprar
         {
-
+            int conteo = 0;
+            string seleccion;
+            
+            if(cbc.Checked == true)
+            {
+                conteo++;
+            }
+            if (cbb.Checked == true)
+            {
+                conteo++;
+            }
+            if(tarjet.Checked == true)
+            {
+                seleccion = "Tarjeta de Credito";
+            }
+            else
+            {
+                seleccion = "PayPal";
+            }
         }
     }
 }

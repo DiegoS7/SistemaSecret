@@ -32,8 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbc = new System.Windows.Forms.CheckBox();
             this.cbb = new System.Windows.Forms.CheckBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.tarjet = new System.Windows.Forms.RadioButton();
+            this.pay = new System.Windows.Forms.RadioButton();
             this.botcomprar = new System.Windows.Forms.Button();
             this.botcerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -78,29 +78,29 @@
             this.cbb.Text = "Visual Basic";
             this.cbb.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // tarjet
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(202, 122);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(134, 20);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Tarjeta de Crédito";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.tarjet.AutoSize = true;
+            this.tarjet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tarjet.Location = new System.Drawing.Point(202, 122);
+            this.tarjet.Name = "tarjet";
+            this.tarjet.Size = new System.Drawing.Size(134, 20);
+            this.tarjet.TabIndex = 4;
+            this.tarjet.TabStop = true;
+            this.tarjet.Text = "Tarjeta de Crédito";
+            this.tarjet.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // pay
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(202, 205);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(70, 20);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "PayPal";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.pay.AutoSize = true;
+            this.pay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pay.Location = new System.Drawing.Point(202, 205);
+            this.pay.Name = "pay";
+            this.pay.Size = new System.Drawing.Size(70, 20);
+            this.pay.TabIndex = 5;
+            this.pay.TabStop = true;
+            this.pay.Text = "PayPal";
+            this.pay.UseVisualStyleBackColor = true;
             // 
             // botcomprar
             // 
@@ -130,8 +130,8 @@
             this.ClientSize = new System.Drawing.Size(361, 379);
             this.Controls.Add(this.botcerrar);
             this.Controls.Add(this.botcomprar);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.pay);
+            this.Controls.Add(this.tarjet);
             this.Controls.Add(this.cbb);
             this.Controls.Add(this.cbc);
             this.Controls.Add(this.label2);
@@ -149,8 +149,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckBox cbc;
         private System.Windows.Forms.CheckBox cbb;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton tarjet;
+        private System.Windows.Forms.RadioButton pay;
         private System.Windows.Forms.Button botcomprar;
         private System.Windows.Forms.Button botcerrar;
     }
