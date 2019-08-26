@@ -79,6 +79,7 @@
             this.txtpassword.Size = new System.Drawing.Size(368, 20);
             this.txtpassword.TabIndex = 3;
             this.txtpassword.UseSystemPasswordChar = true;
+            this.txtpassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txtpassword_KeyPress);
             // 
             // txtuser
             // 
@@ -86,6 +87,7 @@
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(368, 20);
             this.txtuser.TabIndex = 4;
+            this.txtuser.TextChanged += new System.EventHandler(this.Txtuser_TextChanged);
             // 
             // botiniciar
             // 

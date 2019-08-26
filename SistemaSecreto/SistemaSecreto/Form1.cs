@@ -32,6 +32,11 @@ namespace SistemaSecreto
             if (txtuser.Text == "juancho" && txtpassword.Text == "123tamarindo")
             {
                 MessageBox.Show("Bienvenido Sr. Don Juancho");
+                this.Hide(); //Escondemos ventana
+                Ventana2 cursosventana = new Ventana2();
+                cursosventana.Show();
+                this.Visible = false;
+
             }
             else
             {
@@ -39,6 +44,34 @@ namespace SistemaSecreto
                 txtuser.Text = "";
                 txtpassword.Text= "";
                 txtuser.Focus();
+            }
+        }
+
+        private void Txtuser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txtpassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar ==(int)Keys.Enter)
+            {
+                if (txtuser.Text == "juancho" && txtpassword.Text == "123tamarindo")
+                {
+                    MessageBox.Show("Bienvenido Sr. Don Juancho");
+                    this.Hide(); //Escondemos ventana
+                    Ventana2 cursosventana = new Ventana2();
+                    cursosventana.Show();
+                    this.Visible = false;
+
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o Contraseña no valido");
+                    txtuser.Text = "";
+                    txtpassword.Text = "";
+                    txtuser.Focus();
+                }
             }
         }
     }

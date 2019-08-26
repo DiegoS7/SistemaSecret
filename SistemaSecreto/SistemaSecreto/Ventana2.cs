@@ -45,6 +45,7 @@ namespace SistemaSecreto
             {
                 seleccion = "PayPal";
             }
+            MessageBox.Show("Has Seleccionado" + conteo + " Cursos y tu método de pago es " + seleccion);
         }
     }
 }
