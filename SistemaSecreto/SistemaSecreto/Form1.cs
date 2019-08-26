@@ -24,7 +24,7 @@ namespace SistemaSecreto
 
         private void Butsalir_Click(object sender, EventArgs e)
         {
-            this.Close();//cierra el formulariosdfs
+            this.Close();//cierra el formulario
         }
 
         private void Botiniciar_Click(object sender, EventArgs e)
