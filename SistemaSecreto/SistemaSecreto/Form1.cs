@@ -16,5 +16,30 @@ namespace SistemaSecreto
         {
             InitializeComponent();
         }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Butsalir_Click(object sender, EventArgs e)
+        {
+            this.Close();//cierra el formulario
+        }
+
+        private void Botiniciar_Click(object sender, EventArgs e)
+        {
+            if (txtuser.Text == "juancho" && txtpassword.Text == "123tamarindo")
+            {
+                MessageBox.Show("Bienvenido Sr. Don Juancho");
+            }
+            else
+            {
+                MessageBox.Show("Usuario o Contraseña no valido");
+                txtuser.Text = "";
+                txtpassword.Text= "";
+                txtuser.Focus();
+            }
+        }
     }
 }
